@@ -25,7 +25,8 @@ public class PlayerMovement : MonoBehaviour
         if(_HorizontalAxis.Value!=0||_VerticalAxis.Value!=0)
         { 
             if(_Rb.velocity.magnitude < _MaxSpeed)
-                _Rb.AddForce(new Vector3(_VerticalAxis.Value, 0, -_HorizontalAxis.Value).normalized * _MovementSpeed);
+                _Rb.AddForce(new Vector3(_VerticalAxis.Value, 0, -_HorizontalAxis.Value) * _MovementSpeed);
+            
         }
         else
         {

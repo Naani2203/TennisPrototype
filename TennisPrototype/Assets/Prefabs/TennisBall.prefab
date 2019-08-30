@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4656800753893374768}
   - component: {fileID: 4656800753893374799}
   - component: {fileID: 4656800753893374798}
+  - component: {fileID: -4256650832437065321}
   m_Layer: 0
   m_Name: TennisBall
   m_TagString: Untagged
@@ -86,9 +87,26 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4656800753893374797}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 90fd5c3e8ca7abe44b0b09b35825a57e, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-4256650832437065321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4656800753893374797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 236f15e541b7c12498f9806a4addc362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _BallDirectionSO: {fileID: 11400000, guid: 943a6c49a602a1442aee066b56ae58e5, type: 2}
+  _BallHeightSO: {fileID: 11400000, guid: 0fb5c9d0660bd5740a0b1e9a5d3548c3, type: 2}
+  _BallSpeedSO: {fileID: 11400000, guid: 2c1ac941872d828479d0bc97a136760a, type: 2}
+  _BallRigidbodySO: {fileID: 11400000, guid: 36eb32e126be2d946bf68405864950d7, type: 2}
+  _PlayerTransformSO: {fileID: 11400000, guid: 380730e1d7932444f9dfd12de92f62c2, type: 2}

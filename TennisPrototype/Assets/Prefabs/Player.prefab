@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1249359299453693674}
   - component: {fileID: 1087891654029028308}
   - component: {fileID: 7114043204706385205}
+  - component: {fileID: 3415379139034661587}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -96,6 +97,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _HorizontalAxis: {fileID: 0}
   _VerticalAxis: {fileID: 0}
+  _RHorizontalAxis: {fileID: 0}
+  _RVerticalAxis: {fileID: 0}
+  _PlayerTransform: {fileID: 0}
 --- !u!114 &1087891654029028308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,6 +115,7 @@ MonoBehaviour:
   _HorizontalAxis: {fileID: 0}
   _VerticalAxis: {fileID: 0}
   _MovementSpeed: 0
+  _MaxSpeed: 0
   _Rb: {fileID: 0}
 --- !u!136 &7114043204706385205
 CapsuleCollider:
@@ -126,6 +131,22 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3415379139034661587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3880108058270796105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97f9af5b049b60140ad84f8b8a054341, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _AimTransform: {fileID: 11400000, guid: 3f224748507c90f4c9382b9fed4e81ba, type: 2}
+  _BallRigidbody: {fileID: 11400000, guid: 36eb32e126be2d946bf68405864950d7, type: 2}
+  _BallHeight: {fileID: 11400000, guid: 0fb5c9d0660bd5740a0b1e9a5d3548c3, type: 2}
+  _BallSpeed: {fileID: 11400000, guid: 2c1ac941872d828479d0bc97a136760a, type: 2}
 --- !u!1 &4843375713754700922
 GameObject:
   m_ObjectHideFlags: 0
