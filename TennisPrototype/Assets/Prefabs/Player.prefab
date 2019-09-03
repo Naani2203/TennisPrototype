@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 1087891654029028308}
   - component: {fileID: 7114043204706385205}
   - component: {fileID: 3415379139034661587}
+  - component: {fileID: 1058812730}
+  - component: {fileID: 1058812737}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -95,11 +97,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 953a800b4bd05ff4c8bd13bc7f1c6a06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _HorizontalAxis: {fileID: 0}
-  _VerticalAxis: {fileID: 0}
-  _RHorizontalAxis: {fileID: 0}
-  _RVerticalAxis: {fileID: 0}
-  _PlayerTransform: {fileID: 0}
+  _HorizontalAxis: {fileID: 11400000, guid: 92cf3956f3652f742982473475dbdeeb, type: 2}
+  _VerticalAxis: {fileID: 11400000, guid: b36a2998112ffda47bc99b5365966c80, type: 2}
+  _RHorizontalAxis: {fileID: 11400000, guid: 78132ce52aa08fe4d9a35e199fd557fd, type: 2}
+  _RVerticalAxis: {fileID: 11400000, guid: 0ec3efa07b69c0f4b95207daba605fbf, type: 2}
+  _PlayerTransform: {fileID: 11400000, guid: 380730e1d7932444f9dfd12de92f62c2, type: 2}
 --- !u!114 &1087891654029028308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,11 +114,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 906f323ffa373a14cbd181f017cedbba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _HorizontalAxis: {fileID: 0}
-  _VerticalAxis: {fileID: 0}
-  _MovementSpeed: 0
-  _MaxSpeed: 0
-  _Rb: {fileID: 0}
+  _HorizontalAxis: {fileID: 11400000, guid: 92cf3956f3652f742982473475dbdeeb, type: 2}
+  _VerticalAxis: {fileID: 11400000, guid: b36a2998112ffda47bc99b5365966c80, type: 2}
+  _MovementSpeed: 50
+  _MaxSpeed: 7.5
+  _Rb: {fileID: 1058812730}
 --- !u!136 &7114043204706385205
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -147,6 +149,35 @@ MonoBehaviour:
   _BallRigidbody: {fileID: 11400000, guid: 36eb32e126be2d946bf68405864950d7, type: 2}
   _BallHeight: {fileID: 11400000, guid: 0fb5c9d0660bd5740a0b1e9a5d3548c3, type: 2}
   _BallSpeed: {fileID: 11400000, guid: 2c1ac941872d828479d0bc97a136760a, type: 2}
+--- !u!54 &1058812730
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3880108058270796105}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
+--- !u!65 &1058812737
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3880108058270796105}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 3.2537527}
+  m_Center: {x: 0.45, y: 0, z: 0.010347784}
 --- !u!1 &4843375713754700922
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,7 +266,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 4843375713754700922}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
@@ -329,7 +360,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 5496647209378756420}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1

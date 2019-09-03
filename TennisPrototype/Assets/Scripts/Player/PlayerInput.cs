@@ -17,12 +17,12 @@ public class PlayerInput : MonoBehaviour
     
     private void Start()
     {
+        SetValue();
         
     }
     void Update()
     {
         ReadInput();
-        SetValue();
     }
 
     private void ReadInput()
