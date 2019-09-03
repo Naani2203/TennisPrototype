@@ -12,14 +12,12 @@ GameObject:
   - component: {fileID: 4810694745453419186}
   - component: {fileID: 3262448038618645228}
   - component: {fileID: 1249359299453693674}
-  - component: {fileID: 1087891654029028308}
   - component: {fileID: 7114043204706385205}
   - component: {fileID: 3415379139034661587}
   - component: {fileID: 1058812730}
   - component: {fileID: 1058812737}
-  - component: {fileID: 163446369}
   m_Layer: 0
-  m_Name: Player
+  m_Name: AI_Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -103,23 +101,6 @@ MonoBehaviour:
   _RHorizontalAxis: {fileID: 11400000, guid: 78132ce52aa08fe4d9a35e199fd557fd, type: 2}
   _RVerticalAxis: {fileID: 11400000, guid: 0ec3efa07b69c0f4b95207daba605fbf, type: 2}
   _PlayerTransform: {fileID: 11400000, guid: 380730e1d7932444f9dfd12de92f62c2, type: 2}
---- !u!114 &1087891654029028308
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3880108058270796105}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 906f323ffa373a14cbd181f017cedbba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _HorizontalAxis: {fileID: 11400000, guid: 92cf3956f3652f742982473475dbdeeb, type: 2}
-  _VerticalAxis: {fileID: 11400000, guid: b36a2998112ffda47bc99b5365966c80, type: 2}
-  _MovementSpeed: 50
-  _MaxSpeed: 7.5
-  _Rb: {fileID: 1058812730}
 --- !u!136 &7114043204706385205
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -146,7 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97f9af5b049b60140ad84f8b8a054341, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Anim: {fileID: 163446369}
+  _Anim: {fileID: 0}
   _AimTransform: {fileID: 11400000, guid: 3f224748507c90f4c9382b9fed4e81ba, type: 2}
   _BallRigidbody: {fileID: 11400000, guid: 36eb32e126be2d946bf68405864950d7, type: 2}
   _BallHeight: {fileID: 11400000, guid: 0fb5c9d0660bd5740a0b1e9a5d3548c3, type: 2}
@@ -181,25 +162,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 3.2537527}
   m_Center: {x: 0.45, y: 0, z: 0.010347784}
---- !u!95 &163446369
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3880108058270796105}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3bc2414ae859a6f49870b056fb46916e, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4843375713754700922
 GameObject:
   m_ObjectHideFlags: 0

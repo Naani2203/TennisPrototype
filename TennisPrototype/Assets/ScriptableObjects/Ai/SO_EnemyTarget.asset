@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f90b67cdecafb0246bddcc3a708f8317, type: 3}
-  m_Name: SO_BallSpeed
+  m_Script: {fileID: 11500000, guid: f99183ae5a08f3a44897e268fba589a9, type: 3}
+  m_Name: SO_EnemyTarget
   m_EditorClassIdentifier: 
-  Value: 11
+  Value: {fileID: 0}
