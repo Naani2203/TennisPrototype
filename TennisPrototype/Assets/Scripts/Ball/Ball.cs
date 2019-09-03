@@ -14,10 +14,13 @@ public class Ball : MonoBehaviour
     private RigidBodySO _BallRigidbodySO;
     [SerializeField]
     private TransformSO _PlayerTransformSO;
+    [SerializeField]
+    private TransformSO _BallTransformSO;
 
     private void Start()
     {
         _BallRigidbodySO.Value = GetComponent<Rigidbody>();
+        _BallTransformSO.Value = this.transform;
     }
 
     private void OnCollisionEnter(Collision collision)
